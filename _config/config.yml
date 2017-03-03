@@ -1,0 +1,12 @@
+---
+name: registripe_addons
+---
+RegistrableEvent:
+  extensions:
+    - RegistrableEventAddOnExtension
+EventAttendee:
+  extensions:
+    - EventAttendeeAddOnExtension
+EventAttendeeController:
+  extensions:
+    - EventAttendeeControllerAddOnExtension

@@ -1,0 +1,40 @@
+RegistrableEvent:
+  addonevent:
+    Title: Add On Test Event
+
+EventTicket:
+  addonevent_ticket_a:
+    Event: =>RegistrableEvent.addonevent
+    Title: Add On
+    Type: Price
+    PriceAmount: 100
+
+EventAddOn:
+  lunchthursday:
+    Event: =>RegistrableEvent.addonevent
+    Name: Lunch Thursday
+    Price: 60
+  lunchfriday:
+    Event: =>RegistrableEvent.addonevent
+    Name: Lunch Friday
+    Price: 60
+
+EventRegistration:
+  addon_reg_a:
+    FirstName: Bob
+  addon_reg_b:
+    FirstName: Yevonne
+
+EventAttendee:
+  addon_reg_a_1:
+    Registration: =>EventRegistration.addon_reg_a
+    Ticket: =>EventTicket.addonevent_ticket_a
+    AddOns: =>EventAddOn.lunchthursday,=>EventAddOn.lunchfriday
+  addon_reg_b_1:
+    Registration: =>EventRegistration.addon_reg_b
+    Ticket: =>EventTicket.addonevent_ticket_a
+    AddOns: =>EventAddOn.lunchthursday
+  addon_reg_b_2:
+    Registration: =>EventRegistration.addon_reg_b
+    Ticket: =>EventTicket.addonevent_ticket_a
+    AddOns: =>EventAddOn.lunchfriday
