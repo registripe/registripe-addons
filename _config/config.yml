@@ -10,3 +10,6 @@ EventAttendee:
 EventAttendeeController:
   extensions:
     - EventAttendeeControllerAddOnExtension
+TicketSelectionController:
+  extensions:
+    - EventAttendeeControllerAddOnExtension
