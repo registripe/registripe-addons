@@ -15,5 +15,5 @@ TicketSelectionController:
     - EventAttendeeControllerAddOnExtension
 
 AttendeeTicketSelection:
-  calculators:
+  default_calculators:
     - AddOns
