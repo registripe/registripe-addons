@@ -13,3 +13,7 @@ EventAttendeeController:
 TicketSelectionController:
   extensions:
     - EventAttendeeControllerAddOnExtension
+
+AttendeeTicketSelection:
+  calculators:
+    - AddOns
