@@ -6,8 +6,7 @@ EventTicket:
   addonevent_ticket_a:
     Event: =>RegistrableEvent.addonevent
     Title: Add On
-    Type: Price
-    PriceAmount: 100
+    Price: 100
 
 EventAddOn:
   lunchthursday:
